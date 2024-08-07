@@ -1,0 +1,36 @@
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# RsjRoni
+# Inicialização do Powerlevel10k
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Inicialização do fzf, se instalado
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Prompt customizado com seu nome
+# colors 15 0 3 
+
+
+# Verde fluorescente
+#typeset -g POWERLEVEL9K_CUSTOM_USER_NAME_BACKGROUND='10'
+
+# Roxo
+#typeset -g POWERLEVEL9K_CUSTOM_USER_NAME_BACKGROUND='5'
+
+# Azul marinho
+#typeset -g POWERLEVEL9K_CUSTOM_USER_NAME_BACKGROUND='4'
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_user_name context dir vcs)
+
+typeset -g POWERLEVEL9K_CUSTOM_USER_NAME_FOREGROUND=0  
+
+typeset -g POWERLEVEL9K_CUSTOM_USER_NAME_BACKGROUND=10   
+
+# optional
+# typeset -g POWERLEVEL9K_CUSTOM_USER_NAME_ICON='📁'
+
+POWERLEVEL9K_CUSTOM_USER_NAME="echo Roni"
